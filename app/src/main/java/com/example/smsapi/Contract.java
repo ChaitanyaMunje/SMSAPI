@@ -3,7 +3,7 @@ package com.example.smsapi;
 import android.provider.BaseColumns;
 
 public class Contract {
-
+// This is contract class for sqlite database.
     private Contract() {
     }
 

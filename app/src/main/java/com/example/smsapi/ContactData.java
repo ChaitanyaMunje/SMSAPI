@@ -1,6 +1,7 @@
 package com.example.smsapi;
-
+// Data for passing it into recycler view of Contact Fragment.
 class ContactData {
+
     private String name;
 
     public ContactData(String name, String phno, String email) {

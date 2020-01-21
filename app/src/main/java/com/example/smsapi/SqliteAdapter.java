@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class SqliteAdapter extends RecyclerView.Adapter {
+    // This is the adapter class for data to be stored.
     private Context mContext;
     private Cursor mCursor;
 

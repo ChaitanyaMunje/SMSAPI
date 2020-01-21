@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+// Adapter class for displaying Contacts from Json file in Recycler view present in Contact Fragment.
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder>{
     ArrayList<ContactData> data;
@@ -38,15 +39,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull RecyclerAdapter.ViewHolder holder, int position) {
 
-final ContactData ctcdata=data.get(position);
-holder.name.setText(ctcdata.getName());
-holder.phno.setText(ctcdata.getPhno());
-holder.itemView.setOnClickListener(new View.OnClickListener() {
+        final ContactData ctcdata=data.get(position);
+        holder.name.setText(ctcdata.getName());
+        holder.phno.setText(ctcdata.getPhno());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
 
 
-       // Toast.makeText(mContext, "data = "+ctcdata.getName(), Toast.LENGTH_SHORT).show();
+
         Intent i=new Intent(mContext,NewSMS.class);
         i.putExtra("name",ctcdata.getName());
         i.putExtra("phno",ctcdata.getPhno());

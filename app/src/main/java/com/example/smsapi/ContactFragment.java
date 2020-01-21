@@ -29,7 +29,10 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
+/*
 
+This fragment displays data from json File in such as contacts and name in recycler view.
+ */
 public class ContactFragment extends Fragment {
 
 //String jsonurl="https://api.myjson.com/bins/1ewpwa";

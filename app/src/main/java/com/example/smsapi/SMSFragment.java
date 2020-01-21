@@ -24,7 +24,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Random;
-
+// These fragment is used for displaying the SMS sent to the recipents..
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,9 +33,7 @@ public class SMSFragment extends Fragment {
     private SQLiteDatabase mDatabase;
     TextView txt;
     private SqliteAdapter mAdapter;
-   // private EditText mEditTextName;
-   // private TextView mTextViewAmount;
-  //  private int mAmount = 0;
+
     String name,phno,date;
     int otp;
 
@@ -64,12 +62,11 @@ public class SMSFragment extends Fragment {
             date = getArguments().getString("date");
 
             txt.setVisibility(View.INVISIBLE);
-           // Toast.makeText(getContext(), "data = " + otp + phno + otp + date, Toast.LENGTH_SHORT).show();
 
 
         }
         else {
-          //  Toast.makeText(getContext(), "No Data to display", Toast.LENGTH_SHORT).show();
+
             txt.setVisibility(View.VISIBLE);
         }
         RecyclerView recyclerView =view. findViewById(R.id.recyclerview);
@@ -91,7 +88,6 @@ public class SMSFragment extends Fragment {
         mDatabase.insert(Contract.Entry.TABLE_NAME, null, cv);
         mAdapter.swapCursor(getAllItems());
 
-       // mEditTextName.getText().clear();
     }
     private Cursor getAllItems() {
         return mDatabase.query(

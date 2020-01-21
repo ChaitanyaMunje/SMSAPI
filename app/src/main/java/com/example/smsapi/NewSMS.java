@@ -13,6 +13,7 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class NewSMS extends AppCompatActivity {
+    //This activity is used to generate OTP which you have to send it to the recipent.
 String name,phn,email;
 TextView nametxt,emailtxt,phnotxt;
 Button btnsendsms;

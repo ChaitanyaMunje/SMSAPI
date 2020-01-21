@@ -12,6 +12,7 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
+    // This is simply a splash screen.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

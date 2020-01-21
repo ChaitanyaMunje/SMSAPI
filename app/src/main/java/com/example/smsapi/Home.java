@@ -29,7 +29,7 @@ import com.example.smsapi.ui.main.SectionsPagerAdapter;
 public class Home extends AppCompatActivity {
 
     private int STORAGE_PERMISSION_CODE = 1;
-
+// These is the activity which holds both fragments in tablayout.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
