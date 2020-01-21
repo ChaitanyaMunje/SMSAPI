@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:id="@+id/img"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/img"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:id="@+id/txtname"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/img"
+
+        android:layout_below="@id/txtname"
+        android:id="@+id/phnotxt"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
